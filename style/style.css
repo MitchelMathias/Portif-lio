@@ -315,6 +315,11 @@ a.contrate-me:hover, a.contrate-me:focus{
     min-width: 200px;
 }
 
+.proj i{
+    width: 100%;
+    height: 100%;
+}
+
 .proj h3{
     margin: 0px 15px;
     font-size: 1.3em;
