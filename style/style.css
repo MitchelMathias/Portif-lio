@@ -380,6 +380,10 @@ a.contrate-me:hover, a.contrate-me:focus{
     }
 }
 
+div.mail_cel p{
+    padding: 10px;
+}
+
 .mail_cel:hover , .mail_cel:focus{
     background-color: white;
     h2, p, a, i{
