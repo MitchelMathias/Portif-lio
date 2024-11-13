@@ -168,8 +168,8 @@ a.contrate-me:hover, a.contrate-me:focus{
 }
 
 .redes div{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 5px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
@@ -178,57 +178,27 @@ a.contrate-me:hover, a.contrate-me:focus{
 
 .redes a{
     text-align: center;
-    margin-top: 8px;
+    margin-top: 5.5px;
     border-radius: 25%;
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.redes i{
+.uil-linkedin, .uil-github{
+    padding: 0px;
+    margin: 0px;
     color: black;
+    font-size: 25px;
+    
 }
 
 .redes a i:hover, .redes a i:focus{
     color: var(--first-color)
 }
 
-
-.scroll{
-    cursor: pointer;
-    width: 90px;
-    margin: auto;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px ;
-    text-align: center;
-    border:1px solid black;
-}
-
-.scroll a {
-    border-radius: 20px;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: black;
-    text-decoration: none;
-}
-
-.scroll a:hover, .scroll a:focus {
-    font-weight: 600;
-    color: white;
-    background-color: var(--second-color);
-}
-
 .pag02{
     text-align: center;
-}
-
-.introducao{
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 35px;
-    overflow: hidden;
 }
 
 .pag02 h2{
@@ -242,10 +212,16 @@ a.contrate-me:hover, a.contrate-me:focus{
     margin: 20px 0px;
 }
 
+.introducao{
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    overflow: hidden;
+}
+
 .pag02 p{
     text-indent: 2em;
     margin: 15px;
-    text-align: center;
+    text-align: justify;
 }
 
 .pag02 a{
@@ -292,7 +268,6 @@ a.contrate-me:hover, a.contrate-me:focus{
 
 .proj_exp h2{
     margin: 60px 0px;
-
 }
 
 .proj{
@@ -330,6 +305,7 @@ a.contrate-me:hover, a.contrate-me:focus{
 .proj p{
     margin: 0px;
     text-indent: 0px;
+    text-align: center;
 }
 
 .proj div:hover, .proj div:focus{
