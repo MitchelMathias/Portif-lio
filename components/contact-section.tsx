@@ -6,10 +6,12 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react"
-import { Canvas } from "@react-three/fiber"
+import dynamic from "next/dynamic"
 import { Suspense } from "react"
-import { ContactSphere } from "./contact-sphere"
 import { MagneticButton } from "./magnetic-button"
+import { Canvas } from "@react-three/fiber"
+
+const ContactSphere = dynamic(() => import("./contact-sphere"), { ssr: false })
 
 export function ContactSection() {
   console.log("[v0] ContactSection rendering")

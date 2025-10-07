@@ -2,10 +2,12 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import { ArrowDown } from "lucide-react"
-import { Canvas } from "@react-three/fiber"
+import dynamic from "next/dynamic"
 import { Suspense } from "react"
-import { Hero3DScene } from "./hero-3d-scene"
 import { MagneticButton } from "./magnetic-button"
+import { Canvas } from "@react-three/fiber"
+
+const Hero3DScene = dynamic(() => import("./hero-3d-scene"), { ssr: false })
 
 export function HeroSection() {
   console.log("[v0] HeroSection rendering")

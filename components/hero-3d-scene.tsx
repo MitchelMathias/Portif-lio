@@ -5,7 +5,7 @@ import { useFrame, useThree } from "@react-three/fiber"
 import { Float, Sphere, MeshDistortMaterial, Stars } from "@react-three/drei"
 import * as THREE from "three"
 
-export function Hero3DScene({ position }: { position: "left" | "right" }) {
+export default function Hero3DScene({ position }: { position: "left" | "right" }) {
   const { mouse } = useThree()
   const groupRef = useRef<THREE.Group>(null)
   const sphere1Ref = useRef<THREE.Mesh>(null)

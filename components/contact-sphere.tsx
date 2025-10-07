@@ -5,7 +5,7 @@ import { useFrame } from "@react-three/fiber"
 import { Sphere, MeshDistortMaterial, Torus, Float } from "@react-three/drei"
 import type * as THREE from "three"
 
-export function ContactSphere({ mousePosition }: { mousePosition?: { x: number; y: number } }) {
+export default function ContactSphere({ mousePosition }: { mousePosition?: { x: number; y: number } }) {
   const groupRef = useRef<THREE.Group>(null)
   const torusRef = useRef<THREE.Mesh>(null)
   const sphereRef = useRef<THREE.Mesh>(null)
