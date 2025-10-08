@@ -85,7 +85,7 @@ export function HeroSection() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="mt-12 flex gap-4 sm:gap-6 justify-center flex-wrap px-4"
           >
-            <MagneticButton href="public/Curriculo.pdf" target="_blank">Currículo</MagneticButton>
+            <MagneticButton href="/Curriculo.pdf" target="_blank">Currículo</MagneticButton>
             <MagneticButton href="#contact">Entrar em Contato</MagneticButton>
           </motion.div>
         </div>
