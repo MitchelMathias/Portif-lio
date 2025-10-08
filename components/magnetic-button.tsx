@@ -9,12 +9,14 @@ import { cn } from "@/lib/utils"
 interface MagneticButtonProps {
   children: React.ReactNode
   href?: string
+  target?: string
+  rel?: string
   onClick?: () => void
   variant?: "primary" | "secondary"
   className?: string
 }
 
-export function MagneticButton({ children, href, onClick, variant = "primary", className }: MagneticButtonProps) {
+export function MagneticButton({ children, href, target, onClick, variant = "primary", className }: MagneticButtonProps) {
   const ref = useRef<HTMLAnchorElement | HTMLButtonElement>(null)
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
@@ -42,6 +44,7 @@ export function MagneticButton({ children, href, onClick, variant = "primary", c
     <Component
       ref={ref as any}
       href={href}
+      target={target}
       onClick={onClick}
       className={cn(baseClasses, variantClasses[variant], className)}
       onMouseMove={handleMouse}
